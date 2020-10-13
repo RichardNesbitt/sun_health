@@ -4,41 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sun Heath Computer Access Request</title>
-    <!-- need the same similar font as adobe's pdf minion -->
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
-    <!-- not sure how to encompase some basics of an overall layout to the page but here is some inline -->
-
-    <style>
-        body {
-            background: #C5FFFF;
-        }
-
-        main {
-        
-            background:lightgray;
-        }
-
-
-        @media print {
-        
-            @page {
-                size: 8.5in 11in;
-                background: white;
-            }
-
-            main {
-                font-family: 'Crimson Text', serif;
-                
-            }
-
-            header nav, footer {
-                display: none;
-            }
-
-    }
-    </style>
-
-
 
 </head>
 <body>
@@ -46,120 +11,240 @@
 
     <!-- form starts here -->
 
-    <main id="computer-reqest-form" style="width: 8.5in; height: 11in; padding: 10px 30px;">
-        <div class="heading" style="display:flex; justify-content: center;">
-           <img src="./img/sun_heath.jpg" alt="logo"> 
-           <div class="title" style="font-size: 24pt; background-color:#999999; max-width: 500px; height: 40px; padding: 5px 15px;">COMPUTER ACCESS REQUEST</div>
-        </div>
+<main id="computer-reqest-form" style="width: 8.5in; height: 11in; padding: 10px 30px;">
+    <div class="heading" style="display:flex; justify-content: center;">
+        <img src="./img/sun_heath.jpg" alt="logo"> 
+        <div class="title" style="font-size: 24pt; background-color:#999999; max-width: 500px; height: 40px; padding: 5px 15px;">COMPUTER ACCESS REQUEST</div>
+    </div>
 
-        <form action="">
+    <form action="">
 
-        <div id="row01" style="display:flex; ">
-                <div>TO: <span style="text-decoration: underline;">MIS Department</span></div>
-                <div>
-                    <label for="effective_date">Effective Date:</label>
-                    <input type="date" id="effective_date">
-                </div>
-        </div>
-
-        <div class="row02" style="display:flex;">
+    <div id="row01" style="display:flex; ">
+            <div style="font-size:16pt;">TO: <span style="border-bottom: 1px solid black">MIS Department</span></div>
             <div>
-                <span style="text-decoration: underline;">
-                    Type of Request:
-                </span>
+                <label for="effective_date">Effective Date:</label>
+                <input type="date" id="effective_date">
             </div>
+    </div>
 
-            <div class="checkbox01" style="display:flex;">
+    <div class="row02" style="display:flex; font-size:9pt;">
+        <div>
+            <span style="font-size: 16pt; border-bottom: 1px solid black">
+                Type of Request:
+            </span>
+        </div>
+
+        <div class="checkbox01" style="display:flex; ">
+            <div>
                 <div>
-                    <div>
-                        <input type="checkbox" id="employee">
-                        <label for="employee">Employee</label> 
-                    </div>
-
-                    <div>
-                        <input type="checkbox" id="contract_employee">
-                        <label for="contract_employee">Contract Employee</label>
-                    </div>
-
-                    <div>
-                        <input type="checkbox" id="third_party">
-                        <label for="third_party">Third Party Access (View Only)</label>
-                    </div>
-
-                    <div>
-
-                        <input type="checkbox" id="Equipment_purchase">
-                        <label for="Equipment_purchase">Equipment Purchase</label>
-                    </div>      
+                    <input type="checkbox" id="employee">
+                    <label for="employee">Employee</label> 
                 </div>
+
+                <div>
+                    <input type="checkbox" id="contract_employee">
+                    <label for="contract_employee">Contract Employee</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="third_party">
+                    <label for="third_party">Third Party Access (View Only)</label>
+                </div>
+
+                <div>
+
+                    <input type="checkbox" id="Equipment_purchase">
+                    <label for="Equipment_purchase">Equipment Purchase</label>
+                </div>      
+            </div>
+        </div>
+
+        <div class="checkbox02" style="display:flex;">
+            
+            <div>
+                    <div>
+                        <input type="checkbox" id="new_access">
+                        <label for="new_access">New Access</label> 
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="modification">
+                        <label for="modification">Modification Access</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="termination">
+                        <label for="termination">Termination</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="other">
+                        <label for="other">Other</label>
+                    </div>      
             </div>
 
-            <div class="checkbox02" style="display:flex;">
+        </div>
+    </div>
+
+    <div class="row03" style="display:flex; justify-content: space-between; padding: 10px 0;">
+        <div class="left_text">
+            <div>
+            <label for="first_name" style="font-size: 16pt;">First Name:</label>
+            <input type="text" id="first_name" style="width: 250px; height: 25px;">
+            </div>
+            <div>
+            <label for="title" style="font-size: 16pt;">Title:</label>
+            <input type="text" id="title" style="width: 250px; height: 25px;">
+            </div>
+        </div>
+
+        <div class="right_text" >
+            <div>
+            <label for="last_name" style="font-size: 16pt;">Last Name:</label>
+            <input type="text" id="last_name" style="width: 250px; height: 25px;">
+            </div>
+            <div>
+            <label for="department" style="font-size: 16pt;">Department:</label>
+            <input type="text" id="department" style="width: 250px; height: 25px;">
+            </div>
+        </div>
+    </div>
+<hr>
+    <div class="title select-facility">
+        <span style="font-size: 16pt; border-bottom: 1px solid black">
+            Select Facility:
+        </span>
+    </div>
+
+    <div class="row04 select_facility" style="display:flex; justify-content: space-between; padding: 10px 0; font-size:9pt;">
+
+        <div class="col01">
+            
+                <div>
+                    <input type="checkbox" id="sun_health">
+                    <label for="sun_health">Sun Health</label> 
+                </div>
+
+                <div>
+                    <input type="checkbox" id="sun_health_home">
+                    <label for="sun_health_home">Sun Health at Home</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="sun_health_supportive">
+                    <label for="sun_health_supportive">Sun Health Supportive Services</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="private_duty">
+                    <label for="private_duty">Private Duty</label>
+                </div> 
                 
                 <div>
-                        <div>
-                            <input type="checkbox" id="new_access">
-                            <label for="new_access">New Access</label> 
-                        </div>
+                    <input type="checkbox" id="care_transition">
+                    <label for="care_transition">Care Transition</label>
+                </div>  
 
-                        <div>
-                            <input type="checkbox" id="modification">
-                            <label for="modification">Modification Access</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox" id="termination">
-                            <label for="termination">Termination</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox" id="other">
-                            <label for="other">Other</label>
-                        </div>      
-                </div>
-
-            </div>
         </div>
 
-        <div class="row03" style="display:flex; padding: 10px 0;">
-            <div class="left_text">
-                <div>
-                <label for="first_name" style="font-size: 16pt;">First Name:</label>
-                <input type="text" id="first_name" style="width: 250px; height: 25px;">
-                </div>
-                <div>
-                <label for="title" style="font-size: 16pt;">Title:</label>
-                <input type="text" id="title" style="width: 250px; height: 25px;">
-                </div>
+        <div class="col02" >
+               
+                    <div>
+                        <input type="checkbox" id="gvt_indepedent">
+                        <label for="gvt_indepedent">GVT Independant Living</label> 
+                    </div>
+    
+                    <div>
+                        <input type="checkbox" id="gvt_health">
+                        <label for="gvt_health">GVT Health & Rehabilitation Center</label>
+                    </div>
+    
+                    <div>
+                        <input type="checkbox" id="gvt_assisted">
+                        <label for="gvt_assisted">GVT Assisted Living</label>
+                    </div>
+    
+                    <div>
+                        <input type="checkbox" id="gvt_memory">
+                        <label for="gvt_memory">GVT Memory Support</label>
+                    </div> 
+                    
+                    <div>
+                        <input type="checkbox" id="gvt_outpatient">
+                        <label for="gvt_outpatient">GVT Outpatient Therapy</label>
+                    </div>  
+        
+        </div>
+
+
+        <div class="col03" >
+               
+            <div>
+                <input type="checkbox" id="llv_indepedent">
+                <label for="llv_indepedent">LLV Independent Living</label> 
             </div>
 
-            <div class="right_text" >
-                <div>
-                <label for="last_name" style="font-size: 16pt;">Last Name:</label>
-                <input type="text" id="last_name" style="width: 250px; height: 25px;">
-                </div>
-                <div>
-                <label for="department" style="font-size: 16pt;">Department:</label>
-                <input type="text" id="department" style="width: 250px; height: 25px;">
-                </div>
+            <div>
+                <input type="checkbox" id="llv_care">
+                <label for="llv_care">LLV Care Center</label>
             </div>
-        </div>
-<hr>
-        <div class="row04">
+
+            <div>
+                <input type="checkbox" id="llv_assisted">
+                <label for="llv_assisted">LLV Assisted Living</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="llv_memory">
+                <label for="llv_memomory">LLV Memory Support</label>
+            </div> 
             
-
-
-
-
+            <div>
+                <input type="checkbox" id="llv_outpatient">
+                <label for="llv_outpatient">LLV Outpatient Therapy</label>
+            </div>  
 
         </div>
 
-       
+        <div class="col04" >
+               
+            <div>
+                <input type="checkbox" id="colonnade_rc">
+                <label for="colonnade_rc">The Colonnade RC</label> 
+            </div>
+
+            <div>
+                <input type="checkbox" id="colonnade_al">
+                <label for="colonnade_al">The Colonnade AL</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="colonnade_ms">
+                <label for="colonnade_ms">The Colonnade MS</label>
+            </div> 
+        </div>
+    </div>
+
+    
+    <div class="title type-of-access" style="display:flex; justify-content: space-between; align-items:baseline; padding: 10px 0;">
+        <div>
+        <span style="font-size: 16pt; border-bottom: 1px solid black">
+            Type of Access Required:
+        </span>
+        </div>
+        <div style="font-size:10pt;">
+            Please include specifics about access and permissions to drives and various software programs 
+        </div>
+    </div>
+    
 
 
 
 
-        </form>
+
+
+
+    </form>
     </main>
 
     <!-- Form End Here -->
