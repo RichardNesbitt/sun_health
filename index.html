@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sun Heath Computer Access Request</title>
+    <!-- need the same similar font as adobe's pdf minion -->
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+    <!-- not sure how to encompase some basics of an overall layout to the page but here is some inline -->
+
+    <style>
+        body {
+            background: #C5FFFF;
+        }
+
+        main {
+        
+            background:lightgray;
+        }
+
+
+        @media print {
+        
+            @page {
+                size: 8.5in 11in;
+                background: white;
+            }
+
+            main {
+                font-family: 'Crimson Text', serif;
+                
+            }
+
+            header nav, footer {
+                display: none;
+            }
+
+    }
+    </style>
+
+
+
+</head>
+<body>
+ 
+
+    <!-- form starts here -->
+
+    <main id="computer-reqest-form" style="width: 8.5in; height: 11in; padding: 10px 30px;">
+        <div class="heading" style="display:flex; justify-content: center;">
+           <img src="./img/sun_heath.jpg" alt="logo"> 
+           <div class="title" style="font-size: 24pt; background-color:#999999; max-width: 500px; height: 40px; padding: 5px 15px;">COMPUTER ACCESS REQUEST</div>
+        </div>
+
+        <form action="">
+
+        <div id="row01" style="display:flex; ">
+                <div>TO: <span style="text-decoration: underline;">MIS Department</span></div>
+                <div>
+                    <label for="effective_date">Effective Date:</label>
+                    <input type="date" id="effective_date">
+                </div>
+        </div>
+
+        <div class="row02" style="display:flex;">
+            <div>
+                <span style="text-decoration: underline;">
+                    Type of Request:
+                </span>
+            </div>
+
+            <div class="checkbox01" style="display:flex;">
+                <div>
+                    <div>
+                        <input type="checkbox" id="employee">
+                        <label for="employee">Employee</label> 
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="contract_employee">
+                        <label for="contract_employee">Contract Employee</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="third_party">
+                        <label for="third_party">Third Party Access (View Only)</label>
+                    </div>
+
+                    <div>
+
+                        <input type="checkbox" id="Equipment_purchase">
+                        <label for="Equipment_purchase">Equipment Purchase</label>
+                    </div>      
+                </div>
+            </div>
+
+            <div class="checkbox02" style="display:flex;">
+                
+                <div>
+                        <div>
+                            <input type="checkbox" id="new_access">
+                            <label for="new_access">New Access</label> 
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="modification">
+                            <label for="modification">Modification Access</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="termination">
+                            <label for="termination">Termination</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="other">
+                            <label for="other">Other</label>
+                        </div>      
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row03" style="display:flex; padding: 10px 0;">
+            <div class="left_text">
+                <div>
+                <label for="first_name" style="font-size: 16pt;">First Name:</label>
+                <input type="text" id="first_name" style="width: 250px; height: 25px;">
+                </div>
+                <div>
+                <label for="title" style="font-size: 16pt;">Title:</label>
+                <input type="text" id="title" style="width: 250px; height: 25px;">
+                </div>
+            </div>
+
+            <div class="right_text" >
+                <div>
+                <label for="last_name" style="font-size: 16pt;">Last Name:</label>
+                <input type="text" id="last_name" style="width: 250px; height: 25px;">
+                </div>
+                <div>
+                <label for="department" style="font-size: 16pt;">Department:</label>
+                <input type="text" id="department" style="width: 250px; height: 25px;">
+                </div>
+            </div>
+        </div>
+<hr>
+        <div class="row04">
+            
+
+
+
+
+
+        </div>
+
+       
+
+
+
+
+        </form>
+    </main>
+
+    <!-- Form End Here -->
+
+
+
+</body>
+</html>
