@@ -14,6 +14,18 @@
         main {
             background-color: white;
         }
+        .main_title {
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24pt;
+            width: 500px;
+            height: 60px;
+            background-image: url('./img/heading_backgroud.jpg');
+            background-position: center;
+            background-repeat: no-repeat; 
+            background-size: contain;
+        }
     </style>
 </head>
 
@@ -26,7 +38,10 @@
 <main id="computer-reqest-form" style="width: 8.5in; height: 11in; padding: 15px 30px;">
 <div class="heading" style="display:flex; justify-content: center;">
     <img src="./img/sun_heath.jpg" alt="logo" style="position: relative; left:-110px;"> 
-    <div class="title" style="font-size: 24pt; background-color:#999999; max-width: 500px; height: 40px; padding: 5px 15px;">COMPUTER ACCESS REQUEST</div>
+    <div class="main_title">
+    <!-- <div class="title" style="font-size: 24pt; width: 500px; height: 50px; background-image: url('./img/heading_backgroud.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover; text-align: center;"> -->
+        COMPUTER ACCESS REQUEST
+    </div>
 </div>
 <form >
 
@@ -76,7 +91,6 @@
 
     <div class="checkbox02" style="display:flex; flex-direction: column;  margin-left: 80px;">
         
-        
                 <div>
                     <input type="checkbox" id="new_access">
                     <label for="new_access">New Access</label> 
@@ -97,7 +111,6 @@
                     <label for="other">Other</label>
                 </div>      
         
-
     </div>
 </div>
 
@@ -524,89 +537,89 @@
 
 <!-- //----------------------------------------- Group 03 authorization -----------------------------------------------------//--->
 <div class="group03 authorization">
-<div class="row03a title authorization">
-    <span style="font-size: 16pt; border-bottom: 1px solid black">
-        Authorization Required by Director:
-    </span>
-</div>
-
-<div class="row03b auth_input" style="display:flex; justify-content: space-between; padding: 5px 0;">
-
-    <div class="col01">
-        <div style="text-align: right; padding: 0 0 4px 0">
-            <label for="auth_name" style="font-size: 12pt;">Name:</label>
-            <input type="text" id="auth_name" style="width: 300px; height: 25px;">
-        </div>
-        <div style="text-align: right; padding: 0 0 4px 0">
-            <label for="auth_title" style="font-size: 12pt;">Title:</label>
-            <input type="text" id="auth_title" style="width: 300px; height: 25px;">
-        </div>
-        <div style="text-align: right; margin-right:173px;">
-            <label for="auth_date" style="font-size: 12pt;">Date:</label>
-            <input type="date" id="auth_date" style="width: 130px; height: 25px;">
-        </div>
+    <div class="row01 title authorization">
+        <span style="font-size: 16pt; border-bottom: 1px solid black">
+            Authorization Required by Director:
+        </span>
     </div>
 
-    <div class="col02">
-        <div style="text-align: right; padding: 0 0 4px 0">
-            <label for="auth_tel" style="font-size: 12pt;">Telephone #:</label>
-            <input type="text" id="auth_tel" style="width: 300px; height: 25px;">
-        </div>
-        <div style="text-align: right; padding: 0 0 4px 0">
-            <label for="auth_department" style="font-size: 12pt;">Department:</label>
-            <input type="text" id="auth_department" style="width: 300px; height: 25px;">
-        </div>
-        <div style="text-align: right;">
-            <label for="auth_signature" style="font-size: 12pt;">Signature:</label>
-            <input type="text" id="auth_signature" style="width: 300px; height: 25px;">
-        </div>
-    </div>
-</div>
+    <div class="row02 auth_input" style="display:flex; justify-content: space-between; padding: 5px 0;">
 
-<div class="row03c title select-facility">
-    <span style="font-size:16pt ; border-bottom: 1px solid black">
-        Approval Required by IS Director and/or CIO:
-    </span>
-</div>
-
-<div class="row03d auth_input" style="display:flex; justify-content: space-between; padding: 5px 0;">
-
-    <div class="col01" style="display: flex;">
-        
+        <div class="col01">
             <div style="text-align: right; padding: 0 0 4px 0">
-                <label for="auth_is_director" style="font-size: 12pt;">IS Director:</label>
-                <input type="text" id="auth_is_director" style="width: 250px; height: 25px;">
+                <label for="auth_name" style="font-size: 12pt;">Name:</label>
+                <input type="text" id="auth_name" style="width: 300px; height: 25px;">
+            </div>
+            <div style="text-align: right; padding: 0 0 4px 0">
+                <label for="auth_title" style="font-size: 12pt;">Title:</label>
+                <input type="text" id="auth_title" style="width: 300px; height: 25px;">
+            </div>
+            <div style="text-align: right; margin-right:173px;">
+                <label for="auth_date" style="font-size: 12pt;">Date:</label>
+                <input type="date" id="auth_date" style="width: 130px; height: 25px;">
+            </div>
+        </div>
+
+        <div class="col02">
+            <div style="text-align: right; padding: 0 0 4px 0">
+                <label for="auth_tel" style="font-size: 12pt;">Telephone #:</label>
+                <input type="text" id="auth_tel" style="width: 300px; height: 25px;">
+            </div>
+            <div style="text-align: right; padding: 0 0 4px 0">
+                <label for="auth_department" style="font-size: 12pt;">Department:</label>
+                <input type="text" id="auth_department" style="width: 300px; height: 25px;">
+            </div>
+            <div style="text-align: right;">
+                <label for="auth_signature" style="font-size: 12pt;">Signature:</label>
+                <input type="text" id="auth_signature" style="width: 300px; height: 25px;">
+            </div>
+        </div>
+    </div>
+
+    <div class="row03 title select-facility">
+        <span style="font-size:16pt ; border-bottom: 1px solid black">
+            Approval Required by IS Director and/or CIO:
+        </span>
+    </div>
+
+    <div class="row04 auth_input" style="display:flex; justify-content: space-between; padding: 5px 0;">
+
+        <div class="col01" style="display: flex;">
+            
+                <div style="text-align: right; padding: 0 0 4px 0">
+                    <label for="auth_is_director" style="font-size: 12pt;">IS Director:</label>
+                    <input type="text" id="auth_is_director" style="width: 250px; height: 25px;">
+                </div>
+                <div style="font-size: 9pt;">
+                    <div >
+                        <input type="checkbox" id="is_dir_approved" style="margin-top:0;">
+                        <label for="is_dir_approved" style="vertical-align:top;">Approved</label> 
+                    </div>
+                    <div>
+                        <input type="checkbox" id="is_dir_denied" style="margin-top:0;">
+                        <label for="is_dir_denied" style="vertical-align:top;">Denied</label> 
+                    </div>
+                </div>
+            
+        </div>
+
+        <div class="col02" style="display: flex;">
+            <div style="text-align: right; padding: 0 0 4px 0">
+                <label for="auth_cio" style="font-size: 12pt;">CIO:</label>
+                <input type="text" id="auth_cio" style="width: 250px; height: 25px;">
             </div>
             <div style="font-size: 9pt;">
                 <div >
-                    <input type="checkbox" id="is_dir_approved" style="margin-top:0;">
-                    <label for="is_dir_approved" style="vertical-align:top;">Approved</label> 
+                    <input type="checkbox" id="cio_approved" style="margin-top:0;">
+                    <label for="cio_approved" style="vertical-align:top;">Approved</label> 
                 </div>
                 <div>
-                    <input type="checkbox" id="is_dir_denied" style="margin-top:0;">
-                    <label for="is_dir_denied" style="vertical-align:top;">Denied</label> 
+                    <input type="checkbox" id="cio_denied" style="margin-top:0;">
+                    <label for="cio_denied" style="vertical-align:top;">Denied</label> 
                 </div>
             </div>
-        
-    </div>
-
-    <div class="col02" style="display: flex;">
-        <div style="text-align: right; padding: 0 0 4px 0">
-            <label for="auth_cio" style="font-size: 12pt;">CIO:</label>
-            <input type="text" id="auth_cio" style="width: 250px; height: 25px;">
-        </div>
-        <div style="font-size: 9pt;">
-            <div >
-                <input type="checkbox" id="cio_approved" style="margin-top:0;">
-                <label for="cio_approved" style="vertical-align:top;">Approved</label> 
-            </div>
-            <div>
-                <input type="checkbox" id="cio_denied" style="margin-top:0;">
-                <label for="cio_denied" style="vertical-align:top;">Denied</label> 
-            </div>
         </div>
     </div>
-</div>
 </div>
 <!-- //----------------------------------------- END Group 03 authorizaition--------------------------------------------------//--->
 
@@ -614,22 +627,22 @@
 
 <!-- //----------------------------------------- Group 04 additional notes -----------------------------------------------------//--->
 <div class="group04 additional_notes" >
-<div class="row01" style="display:flex; justify-content: start; padding-top: 5px;">
-    <!-- <div style="text-align: right; padding: 0 0 4px 0"> -->
-    <div>
-        <label for="asset_tag" style="font-size: 10pt;">Asset Tag#:</label>
-        <input type="text" id="asset_tag" style="width: 170px; height: 25px;">
+    <div class="row01" style="display:flex; justify-content: start; padding-top: 5px;">
+        <!-- <div style="text-align: right; padding: 0 0 4px 0"> -->
+        <div>
+            <label for="asset_tag" style="font-size: 10pt;">Asset Tag#:</label>
+            <input type="text" id="asset_tag" style="width: 170px; height: 25px;">
+        </div>
+        <div style="padding-left: 15px;" >
+            <label for="computer_name" style="font-size: 10pt;">Computer Name:</label>
+            <input type="text" id="computer_name" style="width: 250px; height: 25px;">
+        </div>
     </div>
-    <div style="padding-left: 15px;" >
-        <label for="computer_name" style="font-size: 10pt;">Computer Name:</label>
-        <input type="text" id="computer_name" style="width: 250px; height: 25px;">
-    </div>
-</div>
 
-<div class="row02" style="margin: 5px 0;">
-    <label for="additional_notes" style="font-size: 10pt;">Additional Notes:</label>
-    <textarea name="additional_notes" id="additional_notes"  rows="5" cols="100" style="resize: none;"></textarea>
-</div>
+    <div class="row02" style="margin: 5px 0;">
+        <label for="additional_notes" style="font-size: 10pt;">Additional Notes:</label>
+        <textarea name="additional_notes" id="additional_notes"  rows="5" cols="100" style="resize: none;"></textarea>
+    </div>
 </div>
 <!-- //----------------------------------------- END Group 04 additional notes --------------------------------------------------//--->
 
