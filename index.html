@@ -5,7 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sun Heath Computer Access Request</title>
 
+
+
+    <style>
+        body {
+            background-color: aqua;
+        }
+        main {
+            background-color: white;
+        }
+    </style>
 </head>
+
+
 <body>
  
 
@@ -13,7 +25,7 @@
 
 <main id="computer-reqest-form" style="width: 8.5in; height: 11in; padding: 10px 30px;">
     <div class="heading" style="display:flex; justify-content: center;">
-        <img src="./img/sun_heath.jpg" alt="logo"> 
+        <img src="./img/sun_heath.jpg" alt="logo" style="position: relative; left:-110px;"> 
         <div class="title" style="font-size: 24pt; background-color:#999999; max-width: 500px; height: 40px; padding: 5px 15px;">COMPUTER ACCESS REQUEST</div>
     </div>
 
@@ -116,6 +128,7 @@
         </span>
     </div>
 
+<!-- Select Facility  -->
 <div class="row04 select_facility" style="display:flex; justify-content: space-between; padding: 10px 0; font-size:9pt;">
 
         <div class="col01">
@@ -236,8 +249,9 @@
         Please include specifics about access and permissions to drives and various software programs 
     </div>
 </div>
+
 <!-- Select Group Type of Access -->
-<div class="row04 select_group_type_of_access" style="display:flex; justify-content: space-between; padding: 10px 0; font-size:9pt;">
+<div class="row04 select_group_type_of_access" style="display:flex; justify-content: space-between; padding: 10px 0 0 0 ; font-size:9pt;">
     <div class="col01">   
         <div>
             <input type="checkbox" id="workstation">
@@ -316,7 +330,7 @@
     </div>
 
     <div class="col04" >
-        
+
         <div>
             <input type="checkbox" id="my_limo">
             <label for="my_limo">My Limo</label> 
@@ -352,15 +366,136 @@
         </div>
 
         <div>
-            <input type="text" id="type_network_drive" value="type of network drive">
+            <input id="type_network_drive" value="type of network drive" style="width:100%;">
         </div> 
 
         <div>
-            <input type="select" id="printer_location">
+            <select name="printer_location" id="printer_location">
+                <option value="null"></option>
+                <option value="GVT RC - Marketing">GVT RC - Marketing</option>
+                <option value="GVT RC - Admin Office">GVT RC - Admin Office</option>
+                <option value="GVT RC - Life Enrichment">GVT RC - Life Enrichment</option>
+                <option value="GVT RC - 3rd Flr Copy Room">GVT RC - 3rd Flr Copy Room</option>
+                <option value="GVT HRC - Canyon">GVT HRC - Canyon</option>
+                <option value="GVT HRC - Bldg. A 1st Floor">GVT HRC - Bldg. A 1st Floor</option>
+                <option value="GVT HRC - Bldg. B 1st Floor">GVT HRC - Bldg. B 1st Floor</option>
+                <option value="HQ - Bldg. A - Admin">HQ - Bldg. A - Admin</option>
+                <option value="HQ - Bldg. A - Copy Room">HQ - Bldg. A - Copy Room</option>
+                <option value="HQ - Bldg. B">HQ - Bldg. B</option>
+                <option value="LLV RC - 2nd Flr Copy Room">LLV RC - 2nd Flr Copy Room</option>
+                <option value="LLV HRC - 2nd Flr Copy Room">LLV HRC - 2nd Flr Copy Room</option>
+                <option value="LLV HRC - Lobby">LLV HRC - Lobby</option>
+                <option value="LLV HRC - Therapy">LLV HRC - Therapy</option>
+                <option value="MNTV - S130">MNTV - S130</option>
+                <option value="MNTV - S240">MNTV - S240</option>
+                <option value="TC AL/MS">TC AL/MS</option>
+                <option value="TC RC">TC RC</option>
+                <!-- <option value="xx">xx</option> -->
+            </select>
         </div> 
-        
+    
+    </div> 
+
+</div>
+
+<div class="row04b" style="display:flex; justify-content: left; padding: 0 0 10px 0; font-size:9pt;">
+    <div class="col01">   
+        <div>
+            <input type="checkbox" id="my_unity">
+            <label for="my_unity">MyUnity* (Vision)</label> 
+        </div>
+    </div>
+    <div class="col02" style="padding:0 0 0 40px">   
+        <div>
+            <label for="role_assigned">*Role Assigned</label> 
+            <select name="role_assigned" id="role_assigned">
+                <option value="null"></option> 
+                <option value="AL: Care Giver">AL: Care Giver</option> 
+                <option value="AL: Clinical">AL: Clinical</option> 
+                <option value="AL: Manager">AL: Manager</option> 
+                <option value="CC: Administrator">CC: Administrator</option> 
+                <option value="CC: Admissions">CC: Admissions</option> 
+                <option value="CC: Billing View">CC: Billing View</option> 
+                <option value="CC: Care Plan Creation">CC: Care Plan Creation</option> 
+                <option value="CC: Central Supply">CC: Central Supply</option> 
+                <option value="CC: Chart Audit">CC: Chart Audit</option> 
+                <option value="CC: Clinical Guest">CC: Clinical Guest</option> 
+                <option value="CC: CNA">CC: CNA</option> 
+                <option value="CC: Dietary">CC: Dietary</option> 
+                <option value="CC: DON">CC: DON</option> 
+                <option value="CC: Life Enrichment">CC: Life Enrichment</option> 
+                <option value="CC: MDS Coordinator">CC: MDS Coordinator</option> 
+                <option value="CC: Medical Records">CC: Medical Records</option> 
+                <option value="CC: Nursing">CC: Nursing</option> 
+                <option value="CC: Operational Support">CC: Operational Support</option> 
+                <option value="CC: Pharmacy Consultant">CC: Pharmacy Consultant</option> 
+                <option value="CC: Social Services">CC: Social Services</option> 
+                <option value="CC: Therapy Guest">CC: Therapy Guest</option> 
+                <option value="CC: Therapy Orders">CC: Therapy Orders</option> 
+                <option value="CC: Therapy Tech">CC: Therapy Tech</option> 
+                <option value="CC: Unit Secretary">CC: Unit Secretary</option> 
+                <option value="CC: View Only Financial Reports">CC: View Only Financial Reports</option> 
+                <option value="CHW: Executive">CHW: Executive</option> 
+                <option value="CRM Account Administrator">CRM Account Administrator</option> 
+                <option value="CRM Member/User">CRM Member/User</option> 
+                <option value="CRM System Administrator">CRM System Administrator</option> 
+                <option value="CT: Admissions">CT: Admissions</option> 
+                <option value="xx">xx</option> 
+                <option value="xx">xx</option> 
+                <option value="xx">xx</option> 
+                <option value="xx">xx</option> 
+                <option value="xx">xx</option> 
+                <option value="xx">xx</option> 
+                <option value="xx">xx</option> 
+                <option value="xx">xx</option> 
+                <option value="xx">xx</option> 
+                <option value="xx">xx</option> 
+
+
+
+            </select>
+            
+        </div>
     </div>
 </div>
+
+<div class="title additional_requests" style="display:flex; justify-content: space-between; align-items:baseline; padding: 5px 0 0 0;">
+
+    <span style="font-size: 10pt; border-bottom: 1px solid black">
+        Additional Requests:
+    </span>
+ 
+</div>
+
+<div class="row06" style="display:flex; font-size: 9pt;">
+    <div class="col01" style="width: 260px;">
+        <div>
+        Equipment / Service / Software Requested:
+        </div>
+        <div style="display: flex; justify-content: space-between;">
+            <div>
+            Email Groups:
+            </div>
+            <div>
+            <input type="checkbox" id="email_add">
+            <label for="email_add">Add</label> 
+            </div>
+            <div>
+            <input type="checkbox" id="email_remove">
+            <label for="email_remove">Remove</label> 
+            </div>
+        </div>
+    </div>
+    <div class="col02">
+        <div>
+        <input type="text" id="equip_serv_soft_request">
+        </div>
+        <div>
+        <input type="text" id="equip_serv_soft_request">
+        </div>
+    </div>
+</div>
+<hr>
 
 
 
