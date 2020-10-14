@@ -23,33 +23,35 @@
 
 <!-- //----------------------------------------- Form starts here ---------------------------------------------------//---->
 
-<main id="computer-reqest-form" style="width: 8.5in; height: 11in; padding: 10px 30px;">
+<main id="computer-reqest-form" style="width: 8.5in; height: 11in; padding: 15px 30px;">
 <div class="heading" style="display:flex; justify-content: center;">
     <img src="./img/sun_heath.jpg" alt="logo" style="position: relative; left:-110px;"> 
     <div class="title" style="font-size: 24pt; background-color:#999999; max-width: 500px; height: 40px; padding: 5px 15px;">COMPUTER ACCESS REQUEST</div>
 </div>
 <form >
+
 <!-- //----------------------------------------- Group 01 name ---------------------------------------------------//--->
 <div class="group01 name">
 
-<div id="row01a mis_date" style="display:flex; ">
-        <div style="font-size:16pt;">TO: <span style="border-bottom: 1px solid black">MIS Department</span></div>
-        <div>
+<div id="row01 mis_date" style="display:flex; font-size:16pt; margin-bottom: 10px;">
+        <div >
+            TO: <span style="border-bottom: 1px solid black">MIS Department</span></div>
+        <div style="margin-left: 100px;">
             <label for="effective_date">Effective Date:</label>
-            <input type="date" id="effective_date">
+            <input type="date" id="effective_date" style="width: 130px;">
         </div>
 </div>
 
-<div class="row01b type_of_request" style="display:flex; font-size:9pt;">
-    <div>
+<div class="row02 title title_type_of_request" style="display:flex; font-size:9pt;">
+    <div style="margin-left: 40px;">
         <span style="font-size: 16pt; border-bottom: 1px solid black">
             Type of Request:
         </span>
     </div>
 
-    <div class="checkbox01" style="display:flex; ">
-        <div>
-            <div>
+    <div class="col01" style="display:flex; flex-direction: column; margin-left: 40px;">
+        
+            <div >
                 <input type="checkbox" id="employee">
                 <label for="employee">Employee</label> 
             </div>
@@ -69,12 +71,12 @@
                 <input type="checkbox" id="Equipment_purchase">
                 <label for="Equipment_purchase">Equipment Purchase</label>
             </div>      
-        </div>
+        
     </div>
 
-    <div class="checkbox02" style="display:flex;">
+    <div class="checkbox02" style="display:flex; flex-direction: column;  margin-left: 80px;">
         
-        <div>
+        
                 <div>
                     <input type="checkbox" id="new_access">
                     <label for="new_access">New Access</label> 
@@ -94,32 +96,32 @@
                     <input type="checkbox" id="other">
                     <label for="other">Other</label>
                 </div>      
-        </div>
+        
 
     </div>
 </div>
 
-<div class="row01c name_input" style="display:flex; justify-content: space-between; padding: 5px 0;">
+<div class="row03 name_input" style="display:flex; justify-content: space-between; padding: 5px 0;">
 
     <div class="col01">
         <div style="text-align: right; padding: 0 0 4px 0">
             <label for="first_name" style="font-size: 16pt;">First Name:</label>
-            <input type="text" id="first_name" style="width: 250px; height: 25px;">
+            <input type="text" id="first_name" style="width: 280px; height: 25px;">
         </div>
         <div style="display:flex; justify-content: space-between;">
             <label for="title" style="font-size: 16pt; text-align:start">Title:</label>
-            <input type="text" id="title" style="width: 250px; height: 25px;">
+            <input type="text" id="title" style="width: 280px; height: 25px;">
         </div>
     </div>
 
     <div class="col02">
         <div style="text-align: right; padding: 0 0 4px 0">
             <label for="last_name" style="font-size: 16pt;">Last Name:</label>
-            <input type="text" id="last_name" style="width: 250px; height: 25px;">
+            <input type="text" id="last_name" style="width: 280px; height: 25px;">
         </div>
         <div style="text-align: right;">
             <label for="department" style="font-size: 16pt;">Department:</label>
-            <input type="text" id="department" style="width: 250px; height: 25px;">
+            <input type="text" id="department" style="width: 280px; height: 25px;">
         </div>
     </div>
 </div>
@@ -131,379 +133,389 @@
 
 <!-- //----------------------------------------- Group 02 facility -------------------------------------------------//--->
 <div class="group02 facility">
-<div class="row02a title select_facility">
-    <span style="font-size: 16pt; border-bottom: 1px solid black">
-        Select Facility:
-    </span>
-</div>
+    <div class="row01 title title_select_facility">
+        <span style="font-size: 16pt; border-bottom: 1px solid black">
+            Select Facility:
+        </span>
+    </div>
 
-<!-- checkbox Facility  -->
-<div class="row02b select_facility" style="display:flex; justify-content: space-between; padding: 5px 0; font-size:9pt;">
+    <!-- checkbox Facility  -->
+    <div class="row02 select_facility" style="display:flex; justify-content: space-between; padding: 5px 0; font-size:9pt;">
 
-        <div class="col01">
-            
-                <div>
-                    <input type="checkbox" id="sun_health">
-                    <label for="sun_health">Sun Health</label> 
-                </div>
-
-                <div>
-                    <input type="checkbox" id="sun_health_home">
-                    <label for="sun_health_home">Sun Health at Home</label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="sun_health_supportive">
-                    <label for="sun_health_supportive">Sun Health Supportive Services</label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="private_duty">
-                    <label for="private_duty">Private Duty</label>
-                </div> 
+            <div class="col01">
                 
-                <div>
-                    <input type="checkbox" id="care_transition">
-                    <label for="care_transition">Care Transition</label>
-                </div>  
+                    <div>
+                        <input type="checkbox" id="sun_health">
+                        <label for="sun_health">Sun Health</label> 
+                    </div>
 
-        </div>
+                    <div>
+                        <input type="checkbox" id="sun_health_home">
+                        <label for="sun_health_home">Sun Health at Home</label>
+                    </div>
 
-        <div class="col02" >
-               
                     <div>
-                        <input type="checkbox" id="gvt_indepedent">
-                        <label for="gvt_indepedent">GVT Independant Living</label> 
+                        <input type="checkbox" id="sun_health_supportive">
+                        <label for="sun_health_supportive">Sun Health Supportive Services</label>
                     </div>
-    
+
                     <div>
-                        <input type="checkbox" id="gvt_health">
-                        <label for="gvt_health">GVT Health & Rehabilitation Center</label>
-                    </div>
-    
-                    <div>
-                        <input type="checkbox" id="gvt_assisted">
-                        <label for="gvt_assisted">GVT Assisted Living</label>
-                    </div>
-    
-                    <div>
-                        <input type="checkbox" id="gvt_memory">
-                        <label for="gvt_memory">GVT Memory Support</label>
+                        <input type="checkbox" id="private_duty">
+                        <label for="private_duty">Private Duty</label>
                     </div> 
                     
                     <div>
-                        <input type="checkbox" id="gvt_outpatient">
-                        <label for="gvt_outpatient">GVT Outpatient Therapy</label>
+                        <input type="checkbox" id="care_transition">
+                        <label for="care_transition">Care Transition</label>
                     </div>  
+
+            </div>
+
+            <div class="col02" >
+                
+                        <div>
+                            <input type="checkbox" id="gvt_indepedent">
+                            <label for="gvt_indepedent">GVT Independant Living</label> 
+                        </div>
         
+                        <div>
+                            <input type="checkbox" id="gvt_health">
+                            <label for="gvt_health">GVT Health & Rehabilitation Center</label>
+                        </div>
+        
+                        <div>
+                            <input type="checkbox" id="gvt_assisted">
+                            <label for="gvt_assisted">GVT Assisted Living</label>
+                        </div>
+        
+                        <div>
+                            <input type="checkbox" id="gvt_memory">
+                            <label for="gvt_memory">GVT Memory Support</label>
+                        </div> 
+                        
+                        <div>
+                            <input type="checkbox" id="gvt_outpatient">
+                            <label for="gvt_outpatient">GVT Outpatient Therapy</label>
+                        </div>  
+            
+            </div>
+
+
+            <div class="col03" >
+                
+                <div>
+                    <input type="checkbox" id="llv_indepedent">
+                    <label for="llv_indepedent">LLV Independent Living</label> 
+                </div>
+
+                <div>
+                    <input type="checkbox" id="llv_care">
+                    <label for="llv_care">LLV Care Center</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="llv_assisted">
+                    <label for="llv_assisted">LLV Assisted Living</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="llv_memory">
+                    <label for="llv_memomory">LLV Memory Support</label>
+                </div> 
+                
+                <div>
+                    <input type="checkbox" id="llv_outpatient">
+                    <label for="llv_outpatient">LLV Outpatient Therapy</label>
+                </div>  
+
+            </div>
+
+            <div class="col04" >
+                
+                <div>
+                    <input type="checkbox" id="colonnade_rc">
+                    <label for="colonnade_rc">The Colonnade RC</label> 
+                </div>
+
+                <div>
+                    <input type="checkbox" id="colonnade_al">
+                    <label for="colonnade_al">The Colonnade AL</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="colonnade_ms">
+                    <label for="colonnade_ms">The Colonnade MS</label>
+                </div> 
+            </div>
+    </div>
+
+    <!-- TITLE Type of Access Required -->
+    <div class="row03 title title_type_of_access_required" style="display:flex; justify-content: space-between; align-items:baseline; padding: 10px 0;">
+        <div>
+        <span style="font-size: 16pt; border-bottom: 1px solid black">
+            Type of Access Required:
+        </span>
+        </div>
+        <div style="font-size:10pt;">
+            Please include specifics about access and permissions to drives and various software programs 
+        </div>
+    </div>
+
+    <!-- Checkbox group Type of Access -->
+    <div class="row04 checkbox_type_of_access" style="display:flex; justify-content: space-between; padding: 5px 0 0 0 ; font-size:9pt;">
+        <div class="col01" style="flex-grow: 2;">   
+            <div>
+                <input type="checkbox" id="workstation">
+                <label for="workstation">Workstation</label> 
+            </div>
+
+            <div>
+                <input type="checkbox" id="network_access">
+                <label for="network_access">Network Access</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="email">
+                <label for="email">Email</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="vpn">
+                <label for="vpn">VPN Access</label>
+            </div> 
+            <!-- *TODO - I think I will seperate this div into its on row -->
+            <!-- <div>
+                <input type="checkbox" id="care_transition">
+                <label for="care_transition">Care Transition</label>
+            </div>   -->
         </div>
 
 
-        <div class="col03" >
-               
-            <div>
-                <input type="checkbox" id="llv_indepedent">
-                <label for="llv_indepedent">LLV Independent Living</label> 
-            </div>
+        <div class="col02" style="flex-grow: 2;">
+        
+                <div>
+                    <input type="checkbox" id="file_bound">
+                    <label for="file_bound">FileBound</label> 
+                </div>
 
-            <div>
-                <input type="checkbox" id="llv_care">
-                <label for="llv_care">LLV Care Center</label>
-            </div>
+                <div>
+                    <input type="checkbox" id="matrix_care">
+                    <label for="matrix_care">Matrix Care</label>
+                </div>
 
-            <div>
-                <input type="checkbox" id="llv_assisted">
-                <label for="llv_assisted">LLV Assisted Living</label>
-            </div>
+                <div>
+                    <input type="checkbox" id="micromain">
+                    <label for="micromain">Micromain</label>
+                </div>
 
-            <div>
-                <input type="checkbox" id="llv_memory">
-                <label for="llv_memomory">LLV Memory Support</label>
-            </div> 
+                <div>
+                    <input type="checkbox" id="great_plains">
+                    <label for="great_plains">Great Plains</label>
+                </div> 
+
+        </div>
+
+
+        <div class="col03" style="flex-grow: 2;">
             
             <div>
-                <input type="checkbox" id="llv_outpatient">
-                <label for="llv_outpatient">LLV Outpatient Therapy</label>
-            </div>  
-
-        </div>
-
-        <div class="col04" >
-               
-            <div>
-                <input type="checkbox" id="colonnade_rc">
-                <label for="colonnade_rc">The Colonnade RC</label> 
+                <input type="checkbox" id="kronos">
+                <label for="kronos">Kronos</label> 
             </div>
 
             <div>
-                <input type="checkbox" id="colonnade_al">
-                <label for="colonnade_al">The Colonnade AL</label>
+                <input type="checkbox" id="casamba_smart">
+                <label for="casamba_smart">Casamba Smart</label>
             </div>
 
             <div>
-                <input type="checkbox" id="colonnade_ms">
-                <label for="colonnade_ms">The Colonnade MS</label>
-            </div> 
-        </div>
-</div>
-
-<!-- TITLE Type of Access Required -->
-<div class="row02c title type_of_access_required" style="display:flex; justify-content: space-between; align-items:baseline; padding: 10px 0;">
-    <div>
-    <span style="font-size: 16pt; border-bottom: 1px solid black">
-        Type of Access Required:
-    </span>
-    </div>
-    <div style="font-size:10pt;">
-        Please include specifics about access and permissions to drives and various software programs 
-    </div>
-</div>
-
-<!-- Checkbox group Type of Access -->
-<div class="row02d checkbox_type_of_access" style="display:flex; justify-content: space-between; padding: 5px 0 0 0 ; font-size:9pt;">
-    <div class="col01">   
-        <div>
-            <input type="checkbox" id="workstation">
-            <label for="workstation">Workstation</label> 
-        </div>
-
-        <div>
-            <input type="checkbox" id="network_access">
-            <label for="network_access">Network Access</label>
-        </div>
-
-        <div>
-            <input type="checkbox" id="email">
-            <label for="email">Email</label>
-        </div>
-
-        <div>
-            <input type="checkbox" id="vpn">
-            <label for="vpn">VPN Access</label>
-        </div> 
-        <!-- *TODO - I think I will seperate this div into its on row -->
-        <!-- <div>
-            <input type="checkbox" id="care_transition">
-            <label for="care_transition">Care Transition</label>
-        </div>   -->
-    </div>
-
-
-    <div class="col02" >
-       
-            <div>
-                <input type="checkbox" id="file_bound">
-                <label for="file_bound">FileBound</label> 
+                <input type="checkbox" id="care_watch">
+                <label for="care_watch">Care Watch</label>
             </div>
 
             <div>
-                <input type="checkbox" id="matrix_care">
-                <label for="matrix_care">Matrix Care</label>
-            </div>
-
-            <div>
-                <input type="checkbox" id="micromain">
-                <label for="micromain">Micromain</label>
-            </div>
-
-            <div>
-                <input type="checkbox" id="great_plains">
-                <label for="great_plains">Great Plains</label>
+                <input type="checkbox" id="risk_watch">
+                <label for="risk_watch">Risk Watch</label>
             </div> 
 
-    </div>
+        </div>
+
+        <!-- <div class="col04" style="margin-left: 50px;"> -->
+        <div class="col04" style="margin-right: 5px;" >
 
 
-    <div class="col03" >
+            <div>
+                <input type="checkbox" id="my_limo">
+                <label for="my_limo">My Limo</label> 
+            </div>
+
+            <div>
+                <input type="checkbox" id="sara_system">
+                <label for="sara_system">Sara System</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="network_drives">
+                <label for="network_drives">Network Drives:</label>
+            </div> 
+
+            <div>
+                <input type="checkbox" id="printer_location">
+                <label for="printer_location">Printer Location:</label>
+            </div> 
+
+        </div>
+
+        <div class="col05" style="width:250px">
+            
+            <div>
+                <input type="checkbox" id="donor_perfect">
+                <label for="donor_perfect">Donor Perfect</label> 
+            </div>
+
+            <div>
+                <input type="checkbox" id="mobile_pass">
+                <label for="mobile_pass">Mobile Pass</label>
+            </div>
+
+            <div>
+                <input id="type_network_drive" style="width:242px;">
+            </div> 
+
+            <div>
+                <select name="printer_location" id="printer_location" style="height:20px; width:250px; margin-top:2px;">
+                    <option value="null"></option>
+                    <option value="GVT RC - Marketing">GVT RC - Marketing</option>
+                    <option value="GVT RC - Admin Office">GVT RC - Admin Office</option>
+                    <option value="GVT RC - Life Enrichment">GVT RC - Life Enrichment</option>
+                    <option value="GVT RC - 3rd Flr Copy Room">GVT RC - 3rd Flr Copy Room</option>
+                    <option value="GVT HRC - Canyon">GVT HRC - Canyon</option>
+                    <option value="GVT HRC - Bldg. A 1st Floor">GVT HRC - Bldg. A 1st Floor</option>
+                    <option value="GVT HRC - Bldg. B 1st Floor">GVT HRC - Bldg. B 1st Floor</option>
+                    <option value="HQ - Bldg. A - Admin">HQ - Bldg. A - Admin</option>
+                    <option value="HQ - Bldg. A - Copy Room">HQ - Bldg. A - Copy Room</option>
+                    <option value="HQ - Bldg. B">HQ - Bldg. B</option>
+                    <option value="LLV RC - 2nd Flr Copy Room">LLV RC - 2nd Flr Copy Room</option>
+                    <option value="LLV HRC - 2nd Flr Copy Room">LLV HRC - 2nd Flr Copy Room</option>
+                    <option value="LLV HRC - Lobby">LLV HRC - Lobby</option>
+                    <option value="LLV HRC - Therapy">LLV HRC - Therapy</option>
+                    <option value="MNTV - S130">MNTV - S130</option>
+                    <option value="MNTV - S240">MNTV - S240</option>
+                    <option value="TC AL/MS">TC AL/MS</option>
+                    <option value="TC RC">TC RC</option>
+                    <!-- <option value="xx">xx</option> -->
+                </select>
+            </div> 
         
-        <div>
-            <input type="checkbox" id="kronos">
-            <label for="kronos">Kronos</label> 
-        </div>
-
-        <div>
-            <input type="checkbox" id="casamba_smart">
-            <label for="casamba_smart">Casamba Smart</label>
-        </div>
-
-        <div>
-            <input type="checkbox" id="care_watch">
-            <label for="care_watch">Care Watch</label>
-        </div>
-
-        <div>
-            <input type="checkbox" id="risk_watch">
-            <label for="risk_watch">Risk Watch</label>
         </div> 
 
     </div>
 
-    <div class="col04" >
 
-        <div>
-            <input type="checkbox" id="my_limo">
-            <label for="my_limo">My Limo</label> 
+    <div class="row05 bottom_row_type_of_access" style="display:flex; justify-content: left; padding: 0 0 10px 0; font-size:9pt; text-decoration: underline;">
+        <div class="col01">   
+            <div>
+                <input type="checkbox" id="my_unity">
+                <label for="my_unity">MyUnity* (Vision)</label> 
+            </div>
         </div>
+        <div class="col02" style="padding:0 0 0 40px;">   
+            <div>
+                <label for="role_assigned">*Role Assigned</label> 
+                <select name="role_assigned" id="role_assigned" style="height:20px;">
+                    <option value="null"></option> 
+                    <option value="AL: Care Giver">AL: Care Giver</option> 
+                    <option value="AL: Clinical">AL: Clinical</option> 
+                    <option value="AL: Manager">AL: Manager</option> 
+                    <option value="CC: Administrator">CC: Administrator</option> 
+                    <option value="CC: Admissions">CC: Admissions</option> 
+                    <option value="CC: Billing View">CC: Billing View</option> 
+                    <option value="CC: Care Plan Creation">CC: Care Plan Creation</option> 
+                    <option value="CC: Central Supply">CC: Central Supply</option> 
+                    <option value="CC: Chart Audit">CC: Chart Audit</option> 
+                    <option value="CC: Clinical Guest">CC: Clinical Guest</option> 
+                    <option value="CC: CNA">CC: CNA</option> 
+                    <option value="CC: Dietary">CC: Dietary</option> 
+                    <option value="CC: DON">CC: DON</option> 
+                    <option value="CC: Life Enrichment">CC: Life Enrichment</option> 
+                    <option value="CC: MDS Coordinator">CC: MDS Coordinator</option> 
+                    <option value="CC: Medical Records">CC: Medical Records</option> 
+                    <option value="CC: Nursing">CC: Nursing</option> 
+                    <option value="CC: Operational Support">CC: Operational Support</option> 
+                    <option value="CC: Pharmacy Consultant">CC: Pharmacy Consultant</option> 
+                    <option value="CC: Social Services">CC: Social Services</option> 
+                    <option value="CC: Therapy Guest">CC: Therapy Guest</option> 
+                    <option value="CC: Therapy Orders">CC: Therapy Orders</option> 
+                    <option value="CC: Therapy Tech">CC: Therapy Tech</option> 
+                    <option value="CC: Unit Secretary">CC: Unit Secretary</option> 
+                    <option value="CC: View Only Financial Reports">CC: View Only Financial Reports</option> 
+                    <option value="CHW: Executive">CHW: Executive</option> 
+                    <option value="CRM Account Administrator">CRM Account Administrator</option> 
+                    <option value="CRM Member/User">CRM Member/User</option> 
+                    <option value="CRM System Administrator">CRM System Administrator</option> 
+                    <option value="CT: Admissions">CT: Admissions</option> 
+                    <option value="xx">xx</option> 
+                    <option value="xx">xx</option> 
+                    <option value="xx">xx</option> 
+                    <option value="xx">xx</option> 
+                    <option value="xx">xx</option> 
+                    <option value="xx">xx</option> 
+                    <option value="xx">xx</option> 
+                    <option value="xx">xx</option> 
+                    <option value="xx">xx</option> 
+                    <option value="xx">xx</option> 
 
-        <div>
-            <input type="checkbox" id="sara_system">
-            <label for="sara_system">Sara System</label>
+
+
+                </select>
+                
+            </div>
         </div>
-
-        <div>
-            <input type="checkbox" id="network_drives">
-            <label for="network_drives">Network Drives:</label>
-        </div> 
-
-        <div>
-            <input type="checkbox" id="printer_location">
-            <label for="printer_location">Printer Location:</label>
-        </div> 
-
     </div>
 
-    <div class="col05" >
-        
-        <div>
-            <input type="checkbox" id="donor_perfect">
-            <label for="donor_perfect">Donor Perfect</label> 
-        </div>
+    <!-- additional requests -->
+    <div class="row06 title additional_requests" style="display:flex; justify-content: space-between; align-items:baseline; padding: 5px 0 0 0;">
 
-        <div>
-            <input type="checkbox" id="mobile_pass">
-            <label for="mobile_pass">Mobile Pass</label>
-        </div>
-
-        <div>
-            <input id="type_network_drive" value="type of network drive" style="width:100%;">
-        </div> 
-
-        <div>
-            <select name="printer_location" id="printer_location">
-                <option value="null"></option>
-                <option value="GVT RC - Marketing">GVT RC - Marketing</option>
-                <option value="GVT RC - Admin Office">GVT RC - Admin Office</option>
-                <option value="GVT RC - Life Enrichment">GVT RC - Life Enrichment</option>
-                <option value="GVT RC - 3rd Flr Copy Room">GVT RC - 3rd Flr Copy Room</option>
-                <option value="GVT HRC - Canyon">GVT HRC - Canyon</option>
-                <option value="GVT HRC - Bldg. A 1st Floor">GVT HRC - Bldg. A 1st Floor</option>
-                <option value="GVT HRC - Bldg. B 1st Floor">GVT HRC - Bldg. B 1st Floor</option>
-                <option value="HQ - Bldg. A - Admin">HQ - Bldg. A - Admin</option>
-                <option value="HQ - Bldg. A - Copy Room">HQ - Bldg. A - Copy Room</option>
-                <option value="HQ - Bldg. B">HQ - Bldg. B</option>
-                <option value="LLV RC - 2nd Flr Copy Room">LLV RC - 2nd Flr Copy Room</option>
-                <option value="LLV HRC - 2nd Flr Copy Room">LLV HRC - 2nd Flr Copy Room</option>
-                <option value="LLV HRC - Lobby">LLV HRC - Lobby</option>
-                <option value="LLV HRC - Therapy">LLV HRC - Therapy</option>
-                <option value="MNTV - S130">MNTV - S130</option>
-                <option value="MNTV - S240">MNTV - S240</option>
-                <option value="TC AL/MS">TC AL/MS</option>
-                <option value="TC RC">TC RC</option>
-                <!-- <option value="xx">xx</option> -->
-            </select>
-        </div> 
+        <span style="font-size: 10pt; border-bottom: 1px solid black">
+            Additional Requests:
+        </span>
     
-    </div> 
-
-</div>
-
-<div class="row02e" style="display:flex; justify-content: left; padding: 0 0 10px 0; font-size:9pt;">
-    <div class="col01">   
-        <div>
-            <input type="checkbox" id="my_unity">
-            <label for="my_unity">MyUnity* (Vision)</label> 
-        </div>
     </div>
-    <div class="col02" style="padding:0 0 0 40px">   
-        <div>
-            <label for="role_assigned">*Role Assigned</label> 
-            <select name="role_assigned" id="role_assigned">
-                <option value="null"></option> 
-                <option value="AL: Care Giver">AL: Care Giver</option> 
-                <option value="AL: Clinical">AL: Clinical</option> 
-                <option value="AL: Manager">AL: Manager</option> 
-                <option value="CC: Administrator">CC: Administrator</option> 
-                <option value="CC: Admissions">CC: Admissions</option> 
-                <option value="CC: Billing View">CC: Billing View</option> 
-                <option value="CC: Care Plan Creation">CC: Care Plan Creation</option> 
-                <option value="CC: Central Supply">CC: Central Supply</option> 
-                <option value="CC: Chart Audit">CC: Chart Audit</option> 
-                <option value="CC: Clinical Guest">CC: Clinical Guest</option> 
-                <option value="CC: CNA">CC: CNA</option> 
-                <option value="CC: Dietary">CC: Dietary</option> 
-                <option value="CC: DON">CC: DON</option> 
-                <option value="CC: Life Enrichment">CC: Life Enrichment</option> 
-                <option value="CC: MDS Coordinator">CC: MDS Coordinator</option> 
-                <option value="CC: Medical Records">CC: Medical Records</option> 
-                <option value="CC: Nursing">CC: Nursing</option> 
-                <option value="CC: Operational Support">CC: Operational Support</option> 
-                <option value="CC: Pharmacy Consultant">CC: Pharmacy Consultant</option> 
-                <option value="CC: Social Services">CC: Social Services</option> 
-                <option value="CC: Therapy Guest">CC: Therapy Guest</option> 
-                <option value="CC: Therapy Orders">CC: Therapy Orders</option> 
-                <option value="CC: Therapy Tech">CC: Therapy Tech</option> 
-                <option value="CC: Unit Secretary">CC: Unit Secretary</option> 
-                <option value="CC: View Only Financial Reports">CC: View Only Financial Reports</option> 
-                <option value="CHW: Executive">CHW: Executive</option> 
-                <option value="CRM Account Administrator">CRM Account Administrator</option> 
-                <option value="CRM Member/User">CRM Member/User</option> 
-                <option value="CRM System Administrator">CRM System Administrator</option> 
-                <option value="CT: Admissions">CT: Admissions</option> 
-                <option value="xx">xx</option> 
-                <option value="xx">xx</option> 
-                <option value="xx">xx</option> 
-                <option value="xx">xx</option> 
-                <option value="xx">xx</option> 
-                <option value="xx">xx</option> 
-                <option value="xx">xx</option> 
-                <option value="xx">xx</option> 
-                <option value="xx">xx</option> 
-                <option value="xx">xx</option> 
 
+    <div class="row07 additional_request_group" style="font-size: 10pt;">
 
+        <div class="top row" style="display:flex; justify-content: space-between; font-size: 10pt;">
+            <div class="col01" style="width: 260px; padding-top: 7px;">
+                Equipment / Service / Software Requested:
+            </div>
 
-            </select>
-            
-        </div>
-    </div>
-</div>
-
-<div class="row02f title additional_requests" style="display:flex; justify-content: space-between; align-items:baseline; padding: 5px 0 0 0;">
-
-    <span style="font-size: 10pt; border-bottom: 1px solid black">
-        Additional Requests:
-    </span>
- 
-</div>
-
-<div class="row02g" style="display:flex; font-size: 9pt;">
-    <div class="col01" style="width: 260px;">
-        <div>
-        Equipment / Service / Software Requested:
-        </div>
-        <div style="display: flex; justify-content: space-between;">
             <div>
-            Email Groups:
+                <input type="text" id="equip_service_soft_request" style="width: 550px; height: 25px; text-align: right;">
+            </div>
+
+        </div>  
+
+        <div class="bottom_row" style="display:flex; justify-content: space-between; margin-top:5px;">
+
+            <div style="display: flex; justify-content: space-between; width: 230px;">
+                <div style="padding-top: 7px;">
+                Email Groups:
+                </div>
+                <div style="padding-top: 5px;">
+                <input type="checkbox" id="email_add">
+                <label for="email_add">Add</label> 
+                </div>
+                <div style="padding-top: 5px;">
+                <input type="checkbox" id="email_remove">
+                <label for="email_remove">Remove</label> 
+                </div>
             </div>
             <div>
-            <input type="checkbox" id="email_add">
-            <label for="email_add">Add</label> 
+            <input type="text" id="equip_serv_soft_request" style="width: 550px; height: 25px;">
             </div>
-            <div>
-            <input type="checkbox" id="email_remove">
-            <label for="email_remove">Remove</label> 
-            </div>
+        
         </div>
     </div>
-    <div class="col02" style="align-items: ;">
-        <div>
-        <input type="text" id="equip_serv_soft_request" style="width: 450px; height: 25px;">
-        </div>
-        <div>
-        <input type="text" id="equip_serv_soft_request" style="width: 250px; height: 25px;">
-        </div>
-    </div>
-</div>
 
 </div>
 <!-- //----------------------------------------- END Group 02 facility----------------------------------------------//--->
@@ -602,7 +614,7 @@
 
 <!-- //----------------------------------------- Group 04 additional notes -----------------------------------------------------//--->
 <div class="group04 additional_notes" >
-<div class="row04a" style="display:flex; justify-content: start; padding-top: 5px;">
+<div class="row01" style="display:flex; justify-content: start; padding-top: 5px;">
     <!-- <div style="text-align: right; padding: 0 0 4px 0"> -->
     <div>
         <label for="asset_tag" style="font-size: 10pt;">Asset Tag#:</label>
@@ -614,9 +626,9 @@
     </div>
 </div>
 
-<div class="row04b" style="margin: 5px 0;">
+<div class="row02" style="margin: 5px 0;">
     <label for="additional_notes" style="font-size: 10pt;">Additional Notes:</label>
-    <textarea name="additional_notes" id="additional_notes"  rows="6" cols="100" style="resize: none;"></textarea>
+    <textarea name="additional_notes" id="additional_notes"  rows="5" cols="100" style="resize: none;"></textarea>
 </div>
 </div>
 <!-- //----------------------------------------- END Group 04 additional notes --------------------------------------------------//--->
@@ -628,6 +640,7 @@
 
 </form>
 </main>
+
 
 <!-- ------------------------------------ Form Ends Here ---------------------------------------------- -->
 
