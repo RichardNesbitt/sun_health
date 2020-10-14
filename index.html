@@ -9,7 +9,7 @@
 <body>
  
 
-    <!-- form starts here -->
+<!-- --------------------------------- form starts here -------------------------------------------------->
 
 <main id="computer-reqest-form" style="width: 8.5in; height: 11in; padding: 10px 30px;">
     <div class="heading" style="display:flex; justify-content: center;">
@@ -116,7 +116,7 @@
         </span>
     </div>
 
-    <div class="row04 select_facility" style="display:flex; justify-content: space-between; padding: 10px 0; font-size:9pt;">
+<div class="row04 select_facility" style="display:flex; justify-content: space-between; padding: 10px 0; font-size:9pt;">
 
         <div class="col01">
             
@@ -223,20 +223,144 @@
                 <label for="colonnade_ms">The Colonnade MS</label>
             </div> 
         </div>
+</div>
+
+<!-- TITLE Type of Access -->
+<div class="title type-of-access" style="display:flex; justify-content: space-between; align-items:baseline; padding: 10px 0;">
+    <div>
+    <span style="font-size: 16pt; border-bottom: 1px solid black">
+        Type of Access Required:
+    </span>
+    </div>
+    <div style="font-size:10pt;">
+        Please include specifics about access and permissions to drives and various software programs 
+    </div>
+</div>
+<!-- Select Group Type of Access -->
+<div class="row04 select_group_type_of_access" style="display:flex; justify-content: space-between; padding: 10px 0; font-size:9pt;">
+    <div class="col01">   
+        <div>
+            <input type="checkbox" id="workstation">
+            <label for="workstation">Workstation</label> 
+        </div>
+
+        <div>
+            <input type="checkbox" id="network_access">
+            <label for="network_access">Network Access</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="email">
+            <label for="email">Email</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="vpn">
+            <label for="vpn">VPN Access</label>
+        </div> 
+        <!-- *TODO - I think I will seperate this div into its on row -->
+        <!-- <div>
+            <input type="checkbox" id="care_transition">
+            <label for="care_transition">Care Transition</label>
+        </div>   -->
     </div>
 
-    
-    <div class="title type-of-access" style="display:flex; justify-content: space-between; align-items:baseline; padding: 10px 0;">
-        <div>
-        <span style="font-size: 16pt; border-bottom: 1px solid black">
-            Type of Access Required:
-        </span>
-        </div>
-        <div style="font-size:10pt;">
-            Please include specifics about access and permissions to drives and various software programs 
-        </div>
+
+    <div class="col02" >
+       
+            <div>
+                <input type="checkbox" id="file_bound">
+                <label for="file_bound">FileBound</label> 
+            </div>
+
+            <div>
+                <input type="checkbox" id="matrix_care">
+                <label for="matrix_care">Matrix Care</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="micromain">
+                <label for="micromain">Micromain</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="great_plains">
+                <label for="great_plains">Great Plains</label>
+            </div> 
+
     </div>
-    
+
+
+    <div class="col03" >
+        
+        <div>
+            <input type="checkbox" id="kronos">
+            <label for="kronos">Kronos</label> 
+        </div>
+
+        <div>
+            <input type="checkbox" id="casamba_smart">
+            <label for="casamba_smart">Casamba Smart</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="care_watch">
+            <label for="care_watch">Care Watch</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="risk_watch">
+            <label for="risk_watch">Risk Watch</label>
+        </div> 
+
+    </div>
+
+    <div class="col04" >
+        
+        <div>
+            <input type="checkbox" id="my_limo">
+            <label for="my_limo">My Limo</label> 
+        </div>
+
+        <div>
+            <input type="checkbox" id="sara_system">
+            <label for="sara_system">Sara System</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="network_drives">
+            <label for="network_drives">Network Drives:</label>
+        </div> 
+
+        <div>
+            <input type="checkbox" id="printer_location">
+            <label for="printer_location">Printer Location:</label>
+        </div> 
+
+    </div>
+
+    <div class="col05" >
+        
+        <div>
+            <input type="checkbox" id="donor_perfect">
+            <label for="donor_perfect">Donor Perfect</label> 
+        </div>
+
+        <div>
+            <input type="checkbox" id="mobile_pass">
+            <label for="mobile_pass">Mobile Pass</label>
+        </div>
+
+        <div>
+            <input type="text" id="type_network_drive" value="type of network drive">
+        </div> 
+
+        <div>
+            <input type="select" id="printer_location">
+        </div> 
+        
+    </div>
+</div>
 
 
 
