@@ -14,18 +14,6 @@
         main {
             background-color: white;
         }
-        .main_title {
-            display:flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 24pt;
-            width: 500px;
-            height: 60px;
-            background-image: url('./img/heading_backgroud.jpg');
-            background-position: center;
-            background-repeat: no-repeat; 
-            background-size: contain;
-        }
     </style>
 </head>
 
@@ -35,11 +23,10 @@
 
 <!-- //----------------------------------------- Form starts here ---------------------------------------------------//---->
 
-<main id="computer-reqest-form" style="width: 8.5in; height: 11in; padding: 15px 30px;">
-<div class="heading" style="display:flex; justify-content: center;">
-    <img src="./img/sun_heath.jpg" alt="logo" style="position: relative; left:-110px;"> 
-    <div class="main_title">
-    <!-- <div class="title" style="font-size: 24pt; width: 500px; height: 50px; background-image: url('./img/heading_backgroud.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover; text-align: center;"> -->
+<main id="computer-reqest-form" style="width: 8.5in; height: 11in; padding: 10px 30px;">
+<div class="heading" style="display:flex;">
+    <img src="./img/sun_heath.jpg" alt="logo" style="position: relative; left:-10px;"> 
+    <div class="main_title" style="font-size:24pt; margin: 20px 0 0 60px;">
         COMPUTER ACCESS REQUEST
     </div>
 </div>
@@ -48,96 +35,96 @@
 <!-- //----------------------------------------- Group 01 name ---------------------------------------------------//--->
 <div class="group01 name">
 
-<div id="row01 mis_date" style="display:flex; font-size:16pt; margin-bottom: 10px;">
-        <div >
-            TO: <span style="border-bottom: 1px solid black">MIS Department</span></div>
-        <div style="margin-left: 100px;">
-            <label for="effective_date">Effective Date:</label>
-            <input type="date" id="effective_date" style="width: 130px;">
-        </div>
-</div>
-
-<div class="row02 title title_type_of_request" style="display:flex; font-size:9pt;">
-    <div style="margin-left: 40px;">
-        <span style="font-size: 16pt; border-bottom: 1px solid black">
-            Type of Request:
-        </span>
-    </div>
-
-    <div class="col01" style="display:flex; flex-direction: column; margin-left: 40px;">
-        
+    <div id="row01 mis_date" style="display:flex; font-size:16pt; margin-bottom: 4px;">
             <div >
-                <input type="checkbox" id="employee">
-                <label for="employee">Employee</label> 
+                TO: <span style="border-bottom: 1px solid black">MIS Department</span></div>
+            <div style="margin-left: 100px;">
+                <label for="effective_date">Effective Date:</label>
+                <input type="date" id="effective_date" style="width: 130px;">
             </div>
-
-            <div>
-                <input type="checkbox" id="contract_employee">
-                <label for="contract_employee">Contract Employee</label>
-            </div>
-
-            <div>
-                <input type="checkbox" id="third_party">
-                <label for="third_party">Third Party Access (View Only)</label>
-            </div>
-
-            <div>
-
-                <input type="checkbox" id="Equipment_purchase">
-                <label for="Equipment_purchase">Equipment Purchase</label>
-            </div>      
-        
     </div>
 
-    <div class="checkbox02" style="display:flex; flex-direction: column;  margin-left: 80px;">
-        
-                <div>
-                    <input type="checkbox" id="new_access">
-                    <label for="new_access">New Access</label> 
+    <div class="row02 title title_type_of_request" style="display:flex; font-size:9pt;">
+        <div style="margin-left: 40px;">
+            <span style="font-size: 16pt; border-bottom: 1px solid black">
+                Type of Request:
+            </span>
+        </div>
+
+        <div class="col01" style="display:flex; flex-direction: column; margin-left: 40px;">
+            
+                <div >
+                    <input type="checkbox" id="employee">
+                    <label for="employee">Employee</label> 
                 </div>
 
                 <div>
-                    <input type="checkbox" id="modification">
-                    <label for="modification">Modification Access</label>
+                    <input type="checkbox" id="contract_employee">
+                    <label for="contract_employee">Contract Employee</label>
                 </div>
 
                 <div>
-                    <input type="checkbox" id="termination">
-                    <label for="termination">Termination</label>
+                    <input type="checkbox" id="third_party">
+                    <label for="third_party">Third Party Access (View Only)</label>
                 </div>
 
                 <div>
-                    <input type="checkbox" id="other">
-                    <label for="other">Other</label>
+
+                    <input type="checkbox" id="Equipment_purchase">
+                    <label for="Equipment_purchase">Equipment Purchase</label>
                 </div>      
-        
-    </div>
-</div>
+            
+        </div>
 
-<div class="row03 name_input" style="display:flex; justify-content: space-between; padding: 5px 0;">
+        <div class="checkbox02" style="display:flex; flex-direction: column;  margin-left: 80px;">
+            
+                    <div>
+                        <input type="checkbox" id="new_access">
+                        <label for="new_access">New Access</label> 
+                    </div>
 
-    <div class="col01">
-        <div style="text-align: right; padding: 0 0 4px 0">
-            <label for="first_name" style="font-size: 16pt;">First Name:</label>
-            <input type="text" id="first_name" style="width: 280px; height: 25px;">
-        </div>
-        <div style="display:flex; justify-content: space-between;">
-            <label for="title" style="font-size: 16pt; text-align:start">Title:</label>
-            <input type="text" id="title" style="width: 280px; height: 25px;">
+                    <div>
+                        <input type="checkbox" id="modification">
+                        <label for="modification">Modification Access</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="termination">
+                        <label for="termination">Termination</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="other">
+                        <label for="other">Other</label>
+                    </div>      
+            
         </div>
     </div>
 
-    <div class="col02">
-        <div style="text-align: right; padding: 0 0 4px 0">
-            <label for="last_name" style="font-size: 16pt;">Last Name:</label>
-            <input type="text" id="last_name" style="width: 280px; height: 25px;">
+    <div class="row03 name_input" style="display:flex; justify-content: space-between; padding: 5px 0;">
+
+        <div class="col01">
+            <div style="text-align: right; padding: 0 0 4px 0">
+                <label for="first_name" style="font-size: 16pt;">First Name:</label>
+                <input type="text" id="first_name" style="width: 280px; height: 25px;">
+            </div>
+            <div style="display:flex; justify-content: space-between;">
+                <label for="title" style="font-size: 16pt; text-align:start">Title:</label>
+                <input type="text" id="title" style="width: 280px; height: 25px;">
+            </div>
         </div>
-        <div style="text-align: right;">
-            <label for="department" style="font-size: 16pt;">Department:</label>
-            <input type="text" id="department" style="width: 280px; height: 25px;">
+
+        <div class="col02">
+            <div style="text-align: right; padding: 0 0 4px 0">
+                <label for="last_name" style="font-size: 16pt;">Last Name:</label>
+                <input type="text" id="last_name" style="width: 280px; height: 25px;">
+            </div>
+            <div style="text-align: right;">
+                <label for="department" style="font-size: 16pt;">Department:</label>
+                <input type="text" id="department" style="width: 280px; height: 25px;">
+            </div>
         </div>
     </div>
-</div>
 
 </div>
 <!-- //----------------------------------------- END Group 01 name ------------------------------------------------//--->
@@ -263,7 +250,7 @@
     </div>
 
     <!-- TITLE Type of Access Required -->
-    <div class="row03 title title_type_of_access_required" style="display:flex; justify-content: space-between; align-items:baseline; padding: 10px 0;">
+    <div class="row03 title title_type_of_access_required" style="display:flex; justify-content: space-between; align-items:baseline; padding: 5px 0;">
         <div>
         <span style="font-size: 16pt; border-bottom: 1px solid black">
             Type of Access Required:
@@ -275,7 +262,7 @@
     </div>
 
     <!-- Checkbox group Type of Access -->
-    <div class="row04 checkbox_type_of_access" style="display:flex; justify-content: space-between; padding: 5px 0 0 0 ; font-size:9pt;">
+    <div class="row04 checkbox_type_of_access" style="display:flex; justify-content: space-between; font-size:9pt;">
         <div class="col01" style="flex-grow: 2;">   
             <div>
                 <input type="checkbox" id="workstation">
@@ -296,11 +283,7 @@
                 <input type="checkbox" id="vpn">
                 <label for="vpn">VPN Access</label>
             </div> 
-            <!-- *TODO - I think I will seperate this div into its on row -->
-            <!-- <div>
-                <input type="checkbox" id="care_transition">
-                <label for="care_transition">Care Transition</label>
-            </div>   -->
+            
         </div>
 
 
@@ -353,7 +336,6 @@
 
         </div>
 
-        <!-- <div class="col04" style="margin-left: 50px;"> -->
         <div class="col04" style="margin-right: 5px;" >
 
 
@@ -487,7 +469,7 @@
     </div>
 
     <!-- additional requests -->
-    <div class="row06 title additional_requests" style="display:flex; justify-content: space-between; align-items:baseline; padding: 5px 0 0 0;">
+    <div class="row06 title additional_requests" style="display:flex; justify-content: space-between; align-items:baseline;">
 
         <span style="font-size: 10pt; border-bottom: 1px solid black">
             Additional Requests:

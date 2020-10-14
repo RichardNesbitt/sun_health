@@ -8,8 +8,6 @@ https://infallible-wescoff-277b17.netlify.app/
 
 Todo:
 
-
-1. align content group 1
-2. submit going off the bottom of the page
+1. submit going off the bottom of the page
 
 
