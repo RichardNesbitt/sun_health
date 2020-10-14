@@ -21,19 +21,16 @@
 <body>
  
 
-<!-- --------------------------------- form starts here -------------------------------------------------->
+<!-- //----------------------------------------- Form starts here ---------------------------------------------------//---->
 
 <main id="computer-reqest-form" style="width: 8.5in; height: 11in; padding: 10px 30px;">
-
 <div class="heading" style="display:flex; justify-content: center;">
     <img src="./img/sun_heath.jpg" alt="logo" style="position: relative; left:-110px;"> 
     <div class="title" style="font-size: 24pt; background-color:#999999; max-width: 500px; height: 40px; padding: 5px 15px;">COMPUTER ACCESS REQUEST</div>
 </div>
-
 <form >
-
-<!-- //----------------------------------------- Group 01 Row01 ---------------------------------------------------//--->
-<div class="group01">
+<!-- //----------------------------------------- Group 01 name ---------------------------------------------------//--->
+<div class="group01 name">
 
 <div id="row01a mis_date" style="display:flex; ">
         <div style="font-size:16pt;">TO: <span style="border-bottom: 1px solid black">MIS Department</span></div>
@@ -128,12 +125,12 @@
 </div>
 
 </div>
-<!-- //----------------------------------------- END Group 01 Row01 ------------------------------------------------//--->
+<!-- //----------------------------------------- END Group 01 name ------------------------------------------------//--->
 
-<hr>
+<div style="margin: 5px 0; border-bottom: 3px solid rgb(191, 191, 191); "></div>
 
-<!-- //----------------------------------------- Group 02 Rows02 -------------------------------------------------//--->
-<div class="group02">
+<!-- //----------------------------------------- Group 02 facility -------------------------------------------------//--->
+<div class="group02 facility">
 <div class="row02a title select_facility">
     <span style="font-size: 16pt; border-bottom: 1px solid black">
         Select Facility:
@@ -262,7 +259,7 @@
     </div>
 </div>
 
-<!-- checkbox Group Type of Access -->
+<!-- Checkbox group Type of Access -->
 <div class="row02d checkbox_type_of_access" style="display:flex; justify-content: space-between; padding: 5px 0 0 0 ; font-size:9pt;">
     <div class="col01">   
         <div>
@@ -509,12 +506,12 @@
 </div>
 
 </div>
-<!-- //----------------------------------------- END Group 02 Rows02 ----------------------------------------------//--->
+<!-- //----------------------------------------- END Group 02 facility----------------------------------------------//--->
 
-<hr>
+<div style="margin: 5px 0; border-bottom: 3px solid rgb(191, 191, 191); "></div>
 
-<!-- //----------------------------------------- Group 03 Rows03 -----------------------------------------------------//--->
-
+<!-- //----------------------------------------- Group 03 authorization -----------------------------------------------------//--->
+<div class="group03 authorization">
 <div class="row03a title authorization">
     <span style="font-size: 16pt; border-bottom: 1px solid black">
         Authorization Required by Director:
@@ -562,25 +559,49 @@
 
 <div class="row03d auth_input" style="display:flex; justify-content: space-between; padding: 5px 0;">
 
-    <div class="col01">
-        <div style="text-align: right; padding: 0 0 4px 0">
-            <label for="auth_is_director" style="font-size: 12pt;">IS Director:</label>
-            <input type="text" id="auth_is_director" style="width: 250px; height: 25px;">
-        </div>
+    <div class="col01" style="display: flex;">
+        
+            <div style="text-align: right; padding: 0 0 4px 0">
+                <label for="auth_is_director" style="font-size: 12pt;">IS Director:</label>
+                <input type="text" id="auth_is_director" style="width: 250px; height: 25px;">
+            </div>
+            <div style="font-size: 9pt;">
+                <div >
+                    <input type="checkbox" id="is_dir_approved" style="margin-top:0;">
+                    <label for="is_dir_approved" style="vertical-align:top;">Approved</label> 
+                </div>
+                <div>
+                    <input type="checkbox" id="is_dir_denied" style="margin-top:0;">
+                    <label for="is_dir_denied" style="vertical-align:top;">Denied</label> 
+                </div>
+            </div>
+        
     </div>
 
-    <div class="col02">
+    <div class="col02" style="display: flex;">
         <div style="text-align: right; padding: 0 0 4px 0">
             <label for="auth_cio" style="font-size: 12pt;">CIO:</label>
             <input type="text" id="auth_cio" style="width: 250px; height: 25px;">
         </div>
+        <div style="font-size: 9pt;">
+            <div >
+                <input type="checkbox" id="cio_approved" style="margin-top:0;">
+                <label for="cio_approved" style="vertical-align:top;">Approved</label> 
+            </div>
+            <div>
+                <input type="checkbox" id="cio_denied" style="margin-top:0;">
+                <label for="cio_denied" style="vertical-align:top;">Denied</label> 
+            </div>
+        </div>
     </div>
 </div>
+</div>
+<!-- //----------------------------------------- END Group 03 authorizaition--------------------------------------------------//--->
 
-<hr>
+<div style="margin: 5px 0; border-bottom: 3px solid rgb(191, 191, 191); "></div>
 
-<!-- //----------------------------------------- Group 04 Rows04 -----------------------------------------------------//--->
-<div class="group04" >
+<!-- //----------------------------------------- Group 04 additional notes -----------------------------------------------------//--->
+<div class="group04 additional_notes" >
 <div class="row04a" style="display:flex; justify-content: start; padding-top: 5px;">
     <!-- <div style="text-align: right; padding: 0 0 4px 0"> -->
     <div>
@@ -598,7 +619,7 @@
     <textarea name="additional_notes" id="additional_notes"  rows="6" cols="100" style="resize: none;"></textarea>
 </div>
 </div>
-<!-- //----------------------------------------- END Group 04 Rows04 --------------------------------------------------//--->
+<!-- //----------------------------------------- END Group 04 additional notes --------------------------------------------------//--->
 <div style="text-align: center; color:red ">
     Once form is complete: click <input type="submit"> button for IT Approval and Processing.
 
